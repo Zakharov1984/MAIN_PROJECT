@@ -1,0 +1,26 @@
+.settings {
+    position: relative;
+    background-color: $COLOR_BLACK;
+    border: none;
+    &__img {
+        max-width: 100%;
+    }
+    &__wrapper-box {
+        position: absolute;
+        bottom: -208px;
+        padding-top: 8px;
+        right: 0;
+        width: 300px;
+        min-height: 200px;
+    }
+    &__box {
+        background-color: $COLOR_BLACK;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        height: 50px;
+    }
+    
+}
