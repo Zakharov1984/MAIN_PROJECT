@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 55px;
+    &__link {
+        display: inline-block;
+        padding: 18px 10px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        color: $COLOR_WHITE_FONTS;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.5s;
+        &:hover {
+            color: $COLOR_HOVER;
+            border-bottom: 3px solid $COLOR_WHITE_FONTS;
+        }
+    }
+}   
