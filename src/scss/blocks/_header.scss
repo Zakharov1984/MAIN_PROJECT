@@ -8,6 +8,10 @@
 
     }
     &__logo-link {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 14px;
+        text-decoration: none;
         display: block;
         height: 40px;
         width: 70px;
@@ -22,7 +26,7 @@
         align-items: center;
     }
     &__button-menu {
-        display: block;
+        display: none;
         margin-right: 15px;
         width: 30px;
         height: 21px;
