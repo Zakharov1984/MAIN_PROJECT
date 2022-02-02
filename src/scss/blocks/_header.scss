@@ -1,4 +1,7 @@
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 55px;
     background-color: #282828;
     &__wrapper-flex {

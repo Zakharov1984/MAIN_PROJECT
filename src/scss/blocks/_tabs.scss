@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__button {
+        width: 170px;
+        height: 50px;
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        border-radius: 11%;
+        text-transform: uppercase;
+        background-color: $COLOR_BLACK;
+        color: $COLOR_WHITE_FONTS;
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0px 0px 15px $COLOR_WHITE_FONTS;
+            transform: translateY(-2px);
+        }
+        &_active {
+            border-radius: 0;
+            background-color: $COLOR_WHITE_FONTS;
+            color: $COLOR_BLACK;
+            text-decoration: underline;
+            border: 1px solid $COLOR_BLACK;
+        }
+    }
+    &__button_active {
+        &:hover {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+    }
+}
