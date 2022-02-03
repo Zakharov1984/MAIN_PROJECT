@@ -23,8 +23,13 @@
         margin-right: 10px;
     }
     &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 50%;
         margin-left: 10px;
+        padding: 10px;
+        padding-bottom: 10px;
         transform: translateX(0%);
         background-color: $COLOR_ORANGE;
         border-radius: 5px;
@@ -37,7 +42,7 @@
     }
     &__details-title {
         position: relative;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 16px;
         font-weight: 700;
         line-height: 1;
@@ -45,14 +50,9 @@
         text-transform: uppercase;
         text-decoration: underline;
     }
-
-    &__details-list {
-        border-bottom: 2px solid $COLOR_BLACK;
-        margin-bottom: 5px;
-    }
     &__details-description {
-        margin-bottom: 5px;
-        padding-bottom: 5px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1;
@@ -79,6 +79,10 @@
         background-color: $COLOR_BLACK;
         font-size: 22px;
         color: $COLOR_WHITE_FONTS
+    }
+    &__back {
+        background-color: $COLOR_ORANGE;
+        line-height: 22px;
     }
     &__links {
         margin-top: 20px;
