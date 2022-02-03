@@ -10,6 +10,9 @@
         width: calc(200% + 20px);
     }
     &__generic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 50%;
         margin-right: 0;
         transform: translateX( calc(-100% - 10px) );
@@ -68,7 +71,7 @@
     &__img {
         max-width: 100%;
     }
-    &__more {
+    &__more, &__back {
         display: block;
         margin: 20px auto 0;
         border: none;
