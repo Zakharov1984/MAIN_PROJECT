@@ -16,20 +16,14 @@ function activeTabs() {
 activeTabs();
 
 function activeContent(idValueTab) {
-    if (idValueTab === 'udemy') {
-        contentElements.forEach(element => {
-            element.classList.remove('projects__content_active');
-        })
+    contentElements.forEach(element => {
+        element.classList.remove('projects__content_active');
+    })
+    if (idValueTab === 'udemy') {        
         document.querySelector('[data-content="udemy"]').classList.add('projects__content_active');
     } else if (idValueTab === 'geekbrains') {
-        contentElements.forEach(element => {
-            element.classList.remove('projects__content_active');
-        })
         document.querySelector('[data-content="geekbrains"]').classList.add('projects__content_active');
     } else if (idValueTab === 'test') {
-        contentElements.forEach(element => {
-            element.classList.remove('projects__content_active');
-        })
         document.querySelector('[data-content="test"]').classList.add('projects__content_active');
     }    
 }
