@@ -3,11 +3,15 @@
     padding: 100px 0;
     background-color: $COLOR_ORANGE;
     &__content {
+        display: none;
         min-height: 700px;
         margin-top: 50px;
         padding: 0 20px;
         background-color: $COLOR_WHITE_FONTS;
         border-radius: 25px;
+    }
+    &__content_active {
+        display: block;
     }
     &__content-title {
         color: $COLOR_BLACK;
