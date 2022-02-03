@@ -3,16 +3,92 @@
     min-height: 400px;
     margin-top: 20px;
     padding: 10px;
-    border: 2px solid $COLOR_BLACK;
+    overflow: hidden;
+    background-color: $COLOR_BLACK;
+    &__wrapper {
+        display: flex;
+        width: calc(200% + 20px);
+    }
+    &__generic {
+        width: 50%;
+        margin-right: 0;
+        transform: translateX( calc(-100% - 10px) );
+        transition: 0.5s all;
+    }
+    &__generic_active {
+        transform: translateX(0%);
+        margin-right: 10px;
+    }
+    &__details {
+        width: 50%;
+        margin-left: 10px;
+        transform: translateX(0%);
+        background-color: $COLOR_ORANGE;
+        border-radius: 5px;
+        transition: 0.5s all;
+    }
+    &__details_active {
+        transform: translateX(-100%);
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    &__details-title {
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    &__details-list {
+        border-bottom: 2px solid $COLOR_BLACK;
+        margin-bottom: 5px;
+    }
+    &__details-description {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        border-bottom: 2px solid $COLOR_BLACK;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__description-item {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+    }
     &__img {
         max-width: 100%;
     }
+    &__more {
+        display: block;
+        margin: 20px auto 0;
+        border: none;
+        border-bottom: 2px solid $COLOR_WHITE_FONTS;
+        background-color: $COLOR_BLACK;
+        font-size: 22px;
+        color: $COLOR_WHITE_FONTS
+    }
     &__links {
-        border-top: 2px solid $COLOR_BLACK;  
+        margin-top: 20px;
+        border-top: 2px solid $COLOR_WHITE_FONTS;
+        text-align: center;  
     }
     &__link {
+        display: block;
+        margin-top: 20px;
         font-size: 16px;
         font-weight: 400;
         line-height: 1;
+        text-decoration: none;
+        color: $COLOR_WHITE_FONTS;
     }
 }
