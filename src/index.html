@@ -16,7 +16,7 @@
                 </a>
                 <nav class="header__nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">My Project</a></li>
+                        <li class="menu__item"><a href="#project" class="menu__link">My Projects</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Covering Letter</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Certificates</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
@@ -45,14 +45,31 @@
             </div>
         </div>
     </header>
-    <section class="project" id="project">
+    <section class="projects" id="project">
         <div class="container">
-            <h2 class="title">project</h2>
+            <h2 class="title">projects</h2>
             <ul class="tabs">
                 <li class="tabs__item"><button class="tabs__button tabs__button_active" id="udemy">udemy</button></li>
-                <li class="tabs__item"><button class="tabs__button" id="GeekBrains">GeekBrains</button></li>
+                <li class="tabs__item"><button class="tabs__button" id="geekbrains">GeekBrains</button></li>
                 <li class="tabs__item"><button class="tabs__button" id="test">test</button></li>
             </ul>
+            <article class="projects__content" data-content="udemy">
+                <h2 class="title projects__content-title">udemy</h2>
+                <div class="project">
+                    <img src="img/project/project1.jpg" alt="project" class="project__img">
+                    <button class="project__more">more</button>
+                    <div class="project__links">
+                        <a href="#" class="project__link">Посмотреть исходный код на GitHub</a>
+                        <a href="#" class="project__link">Просмотреть сайт</a>
+                    </div>
+                </div>
+            </article>
+            <article class="projects__content" data-content="geekbrains">
+                <h2 class="title projects__content-title">GeekBrains</h2>
+            </article>
+            <article class="projects__content" data-content="test">
+                <h2 class="title projects__content-title">test</h2>
+            </article>
         </div>
     </section>
     <script src="js/tabs.js"></script>

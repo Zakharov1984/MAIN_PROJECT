@@ -1,6 +1,18 @@
 .project {
-    min-height: 100vh;
-    padding: 100px 0;
-    background-color: $COLOR_ORANGE;
-    text-align: left;
+    width: 300px;
+    min-height: 400px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid $COLOR_BLACK;
+    &__img {
+        max-width: 100%;
+    }
+    &__links {
+        border-top: 2px solid $COLOR_BLACK;  
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+    }
 }

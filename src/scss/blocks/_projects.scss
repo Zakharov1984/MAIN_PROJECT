@@ -1,0 +1,15 @@
+.projects {
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: $COLOR_ORANGE;
+    &__content {
+        min-height: 700px;
+        margin-top: 50px;
+        padding: 0 20px;
+        background-color: $COLOR_WHITE_FONTS;
+        border-radius: 25px;
+    }
+    &__content-title {
+        color: $COLOR_BLACK;
+    }
+}
