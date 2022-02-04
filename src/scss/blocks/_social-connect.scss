@@ -1,0 +1,33 @@
+.social-connect {
+    position: fixed;
+    top: 50%;
+    left: -9.5%;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    &__text {
+        margin-right: 15px;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 400;
+    }
+    &__delimiter {
+        height: 2px;
+        width: 70px;
+        background-color: $COLOR_BLACK;
+        margin-right: 15px;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+    }
+    &__link {
+        width: 21px;
+        height: 21px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}
