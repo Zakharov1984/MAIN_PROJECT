@@ -2,6 +2,7 @@
     position: relative;
     background-color: $COLOR_BLACK;
     border: none;
+    padding: 0 10px;
     &:hover &__wrapper-box {
         display: block;
     }
@@ -16,6 +17,7 @@
         padding-top: 8px;
         right: 0;   
     }
+
     &__box {
         background-color: $COLOR_BLACK;
         min-width: 300px;
