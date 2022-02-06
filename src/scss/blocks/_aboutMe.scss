@@ -1,0 +1,46 @@
+.aboutMe {
+    min-height: 100vh;
+    padding: 100px 0 20px;
+    background: url('../img/aboutMe/photo.png') right bottom / 30% no-repeat $COLOR_YELLOW;
+    &__wrapper-content {
+        display: flex;
+        margin-top: 50px;
+        height: 350px;
+
+    }
+    &__me {
+        width: 350px;
+        margin-right: 20px;
+    }
+    &__name {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 400;
+        color: $COLOR_BLACK;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: -1px;
+            z-index: -1;
+            width: 44px;
+            height: 32px;
+            border-radius: 7px;;
+            background-color: $COLOR_ORANGE;
+        }
+    }
+    &__description {
+    }
+    &__description-el {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $COLOR_BLACK;
+        font-family: 'Jost', sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,29 @@
+.message {
+    width: 400px;
+    margin-left: 20px;
+    &__title {
+        border-bottom: 3px solid $COLOR_BLACK;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 400;
+        color: $COLOR_BLACK;
+        cursor: pointer;
+    }
+    &__description {
+        height: 0;
+        overflow: hidden;
+        padding-top: 16px;
+        transition: height 1s;
+    }
+    &__description_active {
+        height: 100%;
+        overflow: auto;
+        border-bottom: 3px solid $COLOR_BLACK;
+    }
+    &__description-el {
+        font-family: 'Jost', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+}
