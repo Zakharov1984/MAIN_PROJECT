@@ -77,6 +77,15 @@
             display: block !important;
         }
     }
+    .skills {
+        &__items {
+            grid-template-columns: minmax(auto, 485px);
+        }
+        &__item_big-img {
+            grid-column: 1/2;
+        }
+        
+    }
 
 }
 
