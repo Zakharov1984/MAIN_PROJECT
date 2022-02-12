@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <aside class="social-connect">
+    <!-- <aside class="social-connect">
         <div class="social-connect__text">В социальных сетях</div>
         <div class="social-connect__delimiter"></div>
         <div class="social-connect__links">
@@ -22,7 +22,7 @@
                 <img src="icons/social_connect/vk.svg" alt="vkontakte" class="social-connect_img" target="_blank">
             </a>
         </div>
-    </aside>
+    </aside> -->
     <header class="header">
         <div class="container">
             <div class="header__wrapper-grid">
@@ -32,11 +32,11 @@
                 <nav class="header__nav">
                     <ul class="menu">
                         <li class="menu__item"><a href="#project" class="menu__link">Projects</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Message</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Certificates</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">About Me</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#certificates" class="menu__link">Certificates</a></li>
+                        <li class="menu__item"><a href="#aboutMe" class="menu__link">About Me</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#message" class="menu__link">Message</a></li>
                     </ul>
                 </nav>
                 <div class="header__wrapper-button">
@@ -108,7 +108,7 @@
         <div class="container">
             <h2 class="title">certificates</h2>
             <div class="certificates__wrapper">
-                <img class='sert' src="img/html11.jpg" alt="">
+                <img class='sert' src="img/certificates/basic1.jpg" alt="basic">
                 <div class="certificates__arrow certificates__arrow_left"><img src="icons/certificates/arrow-left.svg" alt="arrow left"></div>
                 <div class="certificates__arrow certificates__arrow_right"><img src="icons/certificates/arrow-right.svg" alt="arrow right"></div>
             </div>
@@ -135,7 +135,7 @@
                         </p>                
                     </div>
                 </div>
-                <div class="message">
+                <div class="message" id="message">
                     <div class="message__title">
                         Cопроводительное письмо
                     </div>
@@ -263,6 +263,55 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="title">contact</h2>
+            <div class="contact__wrapper">
+                <div class="contact__content">
+                    <h3 class="contact__subtitle">
+                        Свяжитесь со мной
+                    </h3>
+                    <a href="tel:+79042623971" class="contact__item phone">
+                        <div class="contact__item-title">Phone</div>
+                        <div class="contact__item-info">8(904)-262-39-71</div>
+                    </a>
+                    <a href="mailto:zakharov.products@gmail.com" class="contact__item mail"> 
+                        <div class="contact__item-title">e-mail</div>
+                        <div class="contact__item-info">zakharov.products@gmail.com</div>
+                    </a>
+                    <div class="contact__item socials">
+                        <div class="contact__item-title contact__item-title_pseudo-element">Socials</div>
+                        <div class="contact__item-info contact__item-info_flex">
+                            <a href="" class="contact__socials-item">
+                                <img src="icons/social_connect/github.svg" alt="github" class="contact__socials-img">
+                            </a>
+                            <a href="" class="contact__socials-item">
+                                <img src="icons/social_connect/instagram.svg" alt="" class="contact__socials-img">
+                            </a>
+                            <a href="" class="contact__socials-item">
+                                <img src="icons/social_connect/vk.svg" alt="" class="contact__socials-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__subtitle">
+                        Или я сам свяжусь с вами
+                    </h3>
+                    <form action="#" class="contact__form">
+                        <div class="contact__form-wrapper-input">
+                            <input required name="name" type="text" id="name" class="contact__form-input">
+                            <label class="contact__form-label" for="name">Имя</label>
+                        </div>
+                        <div class="contact__form-wrapper-input">
+                            <input required name="email" type="email" id="email" class="contact__form-input">
+                            <label class="contact__form-label" for="email">Почта</label>
+                        </div>
+                        <div class="contact__form-wrapper-textarea">
+                            <textarea name="text" id="text" class="contact__form-textarea"></textarea>
+                            <label class="contact__form-label" for="text">Сообщение</label>
+                        </div>
+                        <button class="contact__form-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <script src="js/menu.js"></script>

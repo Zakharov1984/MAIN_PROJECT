@@ -12,13 +12,15 @@
         grid-gap: 10px;
     }
     &__item {
-        border: 2px solid $COLOR_WHITE_FONTS;
         padding: 10px;
         background-color: $COLOR_LIGHTDARK;
+        border-radius: 20px;
     }
     &__item_big-img {
         grid-column: 1/3;
         background: url('../img/skills/bg_code.jpg') center center/cover no-repeat;
+        border-radius: 0;
+        border: 3px solid $COLOR_WHITE_FONTS;
     }
     &__item-img {
         display: block;
