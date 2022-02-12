@@ -23,6 +23,12 @@
             font-size: 15px;
         }
     }
+    .contact {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }  
+    }
 }
 
 @media (max-width: 767px) {
@@ -86,7 +92,6 @@
         }
         
     }
-
 }
 
 @media (max-width: 575px) {

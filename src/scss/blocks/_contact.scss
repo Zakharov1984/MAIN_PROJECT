@@ -1,6 +1,4 @@
 .contact {
-    min-height: 100vh;
-    padding: 100px 0;
     background-color:  #b54f4f;
     &__wrapper {
         margin-top: 50px;
@@ -120,6 +118,7 @@
         display: grid;
         grid-template: 60px 138px 60px / repeat(2, 1fr);
         grid-gap: 30px;
+        grid-auto-rows: auto;
 
     }
     &__form-wrapper-input, &__form-wrapper-textarea {
