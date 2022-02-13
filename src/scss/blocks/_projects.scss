@@ -2,16 +2,21 @@
     background-color: $COLOR_ORANGE;
     &__content {
         display: none;
+        grid-template: 60px 522px / repeat(3, 1fr);
+        grid-auto-rows: 522px;
+        justify-items: center;
         min-height: 700px;
         margin-top: 50px;
-        padding: 0 20px;
+        padding: 20px;
         background-color: $COLOR_WHITE_FONTS;
         border-radius: 25px;
+
     }
     &__content_active {
-        display: block;
+        display: grid;
     }
     &__content-title {
         color: $COLOR_BLACK;
+        grid-column: 1 / 4
     }
 }

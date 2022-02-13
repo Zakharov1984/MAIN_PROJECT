@@ -11,6 +11,11 @@
     .container {
         max-width: 960px;
     }
+    .projects {
+        &__content {
+            grid-template: 60px 522px / repeat(2, 300px);
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -91,6 +96,14 @@
             grid-column: 1/2;
         }
         
+    }
+    .contact {
+        &__form {
+            grid-template: 60px 60px 138px 60px / repeat(2, 1fr);
+        }
+        &__form-wrapper-input {
+            grid-column: 1/3;
+        }
     }
 }
 
