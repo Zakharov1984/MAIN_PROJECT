@@ -1,13 +1,15 @@
 .aboutMe {
-    background: url('../img/aboutMe/photo.png') right bottom / 30% no-repeat $COLOR_YELLOW;
+    background: url('../img/aboutMe/photo.png') right bottom / 24% no-repeat $COLOR_YELLOW;
     &__wrapper-content {
         display: flex;
         margin-top: 50px;
-        height: 350px;
-
+        height: 385px;
+    }
+    &_img-none {
+        background: $COLOR_YELLOW;
     }
     &__me {
-        width: 350px;
+        width: 306px;
         margin-right: 20px;
     }
     &__name {

@@ -10,6 +10,8 @@
         border: 15px solid $COLOR_BLACK;
     }
     &__arrow {
+        width: 70px;
+        height: 70px;
         position: absolute;
         background-color: $COLOR_WHITE_FONTS;
         border-radius: 10px;
