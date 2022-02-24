@@ -14,18 +14,14 @@
     }
     &__logo-link {
         place-self: center start;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 14px;
-        text-decoration: none;
-        display: block;
-        height: 40px;
-        width: 70px;
-        padding: 7px 0;
-        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-width: 130px;
     }
     &__logo-img {
-        max-width: 100%;
+        max-width: 85%;
     }
     &__nav {
         place-self: center center;
