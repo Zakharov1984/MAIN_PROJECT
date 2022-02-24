@@ -37,7 +37,7 @@
     &__details_active {
         transform: translateX(-100%);
         margin-left: 0;
-        margin-right: 20px;
+        margin-right: 20px; // *
     }
     &__details-title {
         position: relative;
