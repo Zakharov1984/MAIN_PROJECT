@@ -3,7 +3,6 @@
         max-width: 1140px;
     }
     .social-connect {
-        left: 3%;
     }
 }
 
@@ -230,6 +229,12 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 626px) {
+    .social-connect {
+        display: none;
     }
 }
 

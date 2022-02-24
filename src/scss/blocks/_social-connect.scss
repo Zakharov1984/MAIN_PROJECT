@@ -1,21 +1,34 @@
 .social-connect {
     position: fixed;
     top: 50%;
-    left: -9.5%;
+    left: -140px;
     display: flex;
     align-items: center;
     transform: rotate(-90deg);
+    color: $COLOR_BLACK;
+
     &__text {
         margin-right: 15px;
         font-size: 18px;
         line-height: 1;
         font-weight: 400;
+        color: inherit;
+        transition: color 0.5s;
+        &_active-scroll {
+            transition: color 0.5s;
+            color: $COLOR_WHITE_FONTS;
+        }
     }
     &__delimiter {
         height: 2px;
         width: 70px;
         background-color: $COLOR_BLACK;
         margin-right: 15px;
+        transition: background-color 0.5s;
+        &_active-scroll {
+            transition: background-color 0.5s;
+            background-color: $COLOR_WHITE_FONTS;
+        }
     }
     &__links {
         display: flex;
@@ -25,6 +38,12 @@
     &__link {
         width: 21px;
         height: 21px;
+        transition: background-color 0.5s;
+        &_active-scroll {
+            background-color: $COLOR_WHITE_FONTS;
+            border-radius: 5px;
+            transition: background-color 0.5s;
+        }
     }
     &__img {
         display: block;
