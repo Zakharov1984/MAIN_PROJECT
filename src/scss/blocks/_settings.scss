@@ -13,26 +13,28 @@
     &__wrapper-box {
         display: none;
         position: absolute;
-        bottom: -207px;
+        top: 39px;
         padding-top: 8px;
         right: 0;   
     }
 
     &__box {
+        border-top: 2px solid $COLOR_WHITE_FONTS;
         background-color: $COLOR_BLACK;
         min-width: 300px;
         padding: 0;
         margin: 0;
     }
     &__item {
+        display: flex;
+        align-items: center;
         height: 50px;
         font-size: 16px;
         line-height: 1;
         font-weight: 500;
         color: $COLOR_WHITE_FONTS;
         text-align: left;
-        border-bottom: 2px solid $COLOR_WHITE_FONTS
-
+        border-bottom: 2px solid $COLOR_WHITE_FONTS;
     }
     
 }
