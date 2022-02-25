@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.promo {
+    height: 800px;
+    padding: 38px 0 61px;
+    background: url('../img/first_block/main_bg.jpg') center center/ cover no-repeat;
+    text-align: center;
+}
+
+.logo__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo__text {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title-create,
+.title-right {
+    margin-top: 53px;
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 1;
+    color: #f9bf3b;
+    text-transform: uppercase;
+}
+
+.simple {
+    position: relative;
+    margin-top: 20px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 60px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.simple::before, .simple::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    width: 292px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.simple::before {
+    left: -18px
+}
+
+.simple::after {
+    right: -18px;
+}
+
+.title-right {
+    margin-top: 20px;
+}
+
+.description {
+    margin-top: 22px;
+    padding: 0 13 px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #ffff;
+}
+
+.attention {
+    font-weight: bold;
+    color: #f9bf3b;
+    text-transform: uppercase ;
+}
+
+.btn {
+    margin-top: 72px;
+    padding: 24px 15px;
+    background-image: linear-gradient(to top, #2798b9, #3ab6da);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.more {
+margin-top: 65px;
+}
+
+.more__to-know {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.6;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.more-link {
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 15px;
+}
+
+.what-awaits {
+    min-height: 607px;
+    padding: 85px 0 75px;
+    background: #efefef;
+}
+
+.what-awaits__title {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.delimiter {
+    width: 220px;
+    height: 7px;
+    margin: 18px auto 0;
+    background: #f9bf3b;
+}
+
+.what-awaits__description {
+    margin-top: 18px;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 0.87;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.what-awaits__info {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.what-awaits__info-possibility {
+    width: 370px;
+    text-align: center;
+}
+
+.possibility-img {
+    max-width: 342px;
+}
+
+.possibility-description {
+    padding-top: 26px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #4a4a4a;
+}
+
+.optimization {
+    min-height: 549px;
+    padding: 108px 0 74px;
+}
+
+.optimization__info {
+    width: 750px;
+    margin-left: 376px;
+}
+
+.optimization__info-header {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: left;
+    color: #299cbd;
+    text-transform: uppercase;
+}
+
+.optimization__info-description {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.59;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.optimization__info-description strong {
+    font-weight: 700;
+}
+
+.optimization__img {
+    position: absolute;
+    top: -61px;
+    left: -245px;
+    z-index: -1;
+}
+
+.graduation {
+    min-height: 447px;
+    padding: 86px 0 68px ;
+    background: url('../img/fourth_block/graduation_from_training_bg.jpg') center center/cover no-repeat; 
+}
+
+.graduation__heading {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+.graduation-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+.graduation-item {
+ width: 194px;
+}
+
+.graduation-item__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    margin: 0 auto;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.graduation-item__img {
+
+}
+
+.graduation-item__description {
+    margin-top: 24px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.18;
+    text-align: center;
+    color: #efefef;
+}
+
+.gift {
+    height: 631px;
+    padding: 86px 0 88px;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.gift__img {
+display: block;
+margin: 0 auto;
+}
+
+.gift__description {
+    margin-top: 38px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.43;
+    color: #252525;
+}
+
+.gift .btn {
+    margin-top: 44px;
+}
+
+.first-webinar {
+    min-height: 512px;
+    padding: 89px 0 52px;
+    text-align: center;
+}
+
+.first-webinar__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.first-webinar__header {
+    margin-top: 36px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.first-webinar__date {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    color: #299cbd;
+    text-transform: uppercase;
+}
+
+.first-webinar__have-time {
+    margin-top: 24px;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 0.87;
+    color: #4a4a4a;
+}
+
+.footer {
+    height: 168px;
+    padding-top: 55px;
+    background: #1a1a1a;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    color: #888;
+}
+
+.footer__link,
+.footer__link-tel {
+    color: inherit;
+}
+
+
