@@ -1,13 +1,30 @@
 .certificates {
     background-color: $COLOR_GREEN;
-    &__wrapper {
+    &__generic-wrapper {
         position: relative;
         max-width: 770px;
         height: 460px;
         margin: 50px auto 0;
+    }
+    &__wrapper {
+        max-width: 100%;
+        height: 100%;
         border: 11px solid #282828;
         background-color: black;
         border: 15px solid $COLOR_BLACK;
+        overflow: hidden;
+    }
+    &__item-wrapper {
+        display: flex;
+        width: calc(600% + 90px);
+        height: 100%;
+    }
+    &__item-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 15px;
     }
     &__arrow {
         width: 70px;
@@ -20,15 +37,9 @@
         cursor: pointer;
     }
     &__arrow_left {
-        left: -102px;
+        left: -95px;
     }
     &__arrow_right {
-        right: -102px
+        right: -95px
     }
-}
-
-.sert {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
