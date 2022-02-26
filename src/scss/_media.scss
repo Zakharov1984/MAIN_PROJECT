@@ -182,10 +182,12 @@
             height: 22px;
         }
         &__description {
-            transition: all 0.3s;
+            opacity: 0;
+            transition: all 0.5s linear;
         }
         &__description_active {
-            max-height: 400px;
+            height: 400px;
+            opacity: 100%;
         }
     }
     .skills {
@@ -268,6 +270,7 @@
     }
     .message {
         width: 77%;
+        transition: width .5s linear;
         &__title {
             font-size: 22px;
             padding-right: 24px;

@@ -19,6 +19,7 @@
     }
     &__description {
         height: 0;
+        opacity: 0;
         overflow: hidden;
         transition: all 1s;
         padding-left: 5px;
@@ -26,10 +27,11 @@
     }
     &__description_active {
         height: 91%;
+        opacity: 100%;
         padding-top: 16px;
         overflow: auto;
         border-bottom: 3px solid $COLOR_BLACK;
-        background-color: #4acd9c;
+        background-color: #ff5f45;
         
 
     }
