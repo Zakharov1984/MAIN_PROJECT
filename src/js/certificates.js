@@ -7,7 +7,7 @@ let WidthsliderWrapperElement = certificatesWrapperElement.offsetWidth - 30; // 
 let imgWidth = certificatesWrapperElement.offsetWidth - 30; // изначально ставим размер img в рамер обертки(certificates__wrapper), чтобы , если изменения размера окна не быо у нас была начальная ширина.
 let SliderCounter = 0;
 let offset = 0;
-sliderImgElements.forEach(element => {
+sliderImgElements.forEach(element => { // обходим коллекцию, присваиваем ширину родителя(с бордером) изображениям.
     element.style.width = `${imgWidth}px`;
 })
 
