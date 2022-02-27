@@ -167,9 +167,13 @@
         font-size: 18px;
         line-height: 1;
         font-weight: 400;
+        &:hover {
+            color: $COLOR_BLACK;
+        }
         &:active {
             background-color: $COLOR_BLACK;
             border: none;
+            color: $COLOR_GREEN;
         }
         
     }

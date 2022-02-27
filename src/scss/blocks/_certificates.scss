@@ -13,6 +13,7 @@
         background-color: black;
         border: 15px solid $COLOR_BLACK;
         overflow: hidden;
+        border-radius: 20px;
     }
     &__item-wrapper {
         display: flex;
