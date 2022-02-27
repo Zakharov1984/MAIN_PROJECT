@@ -222,12 +222,19 @@
             <div class="certificates__generic-wrapper"> <!-- еще одна обертка, чтобы при overflow - hidden  не перекрывались стрелки -->
                 <div class="certificates__wrapper">
                     <div class="certificates__item-wrapper">
-                        <img class='certificates__item-img' src="img/certificates/basic1.jpg" alt="basic">
-                        <img class='certificates__item-img' src="img/certificates/basic2.jpg" alt="basic">
+                        <picture>
+                            <source media="(max-width: 420px)" srcset="img/certificates/mobile/basicMobile1.jpg"> 
+                            <source media="(max-width: 767px)" srcset="img/certificates/tablet/basicTablet1.jpg">                            
+                            <source media="(min-width: 768px)" srcset="img/certificates/desktop/basicDesctop1.jpg">
+                            
+                            
+                            <img class='certificates__item-img' src="img/certificates/desktop/basicDesctop1.jpg" alt="basic">
+                        </picture>
+<!--                         <img class='certificates__item-img' src="img/certificates/basic2.jpg" alt="basic">
                         <img class='certificates__item-img' src="img/certificates/html1.jpg" alt="html">
                         <img class='certificates__item-img' src="img/certificates/html2.jpg" alt="html">
                         <img class='certificates__item-img' src="img/certificates/js1.jpg" alt="js">
-                        <img class='certificates__item-img' src="img/certificates/udemyWeb.jpg" alt="web">
+                        <img class='certificates__item-img' src="img/certificates/udemyWeb.jpg" alt="web"> -->
                     </div>
                 </div>
                 <div class="certificates__arrow certificates__arrow_left"><img src="icons/certificates/arrow-left.svg" alt="arrow left"></div>

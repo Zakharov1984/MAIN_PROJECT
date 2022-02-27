@@ -153,6 +153,9 @@
         }
     }
     .certificates {
+        &__item-img {
+            object-fit: fill;
+        }
         padding: 65px 0 120px;
     }
     .aboutMe {
@@ -288,6 +291,10 @@
 
 @media (max-width: 420px) {
     .certificates {
+        padding: 63px 0 105px;
+        &__generic-wrapper {
+            height: 360px;
+        }
         &__arrow_left {
             left: 38%;
             transform: translateX(-38%);
@@ -317,6 +324,9 @@
         }
     }
     .certificates {
+        &__generic-wrapper {
+            height: 310px;
+        }
         &__arrow_left {
             left: 30%;
             transform: translateX(-30%);
