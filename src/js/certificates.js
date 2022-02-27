@@ -7,6 +7,9 @@ let WidthsliderWrapperElement = certificatesWrapperElement.offsetWidth - 30; // 
 let imgWidth = certificatesWrapperElement.offsetWidth - 30; // изначально ставим размер img в рамер обертки(certificates__wrapper), чтобы , если изменения размера окна не быо у нас была начальная ширина.
 let SliderCounter = 0;
 let offset = 0;
+sliderImgElements.forEach(element => {
+    element.style.width = `${imgWidth}px`;
+})
 
 
 window.addEventListener('resize', event => { // остлеживаем изменение размера окна, чтобы обновлять ширину imgWidth.(ширина элемента img не может подстраиваться под размеры родителя(с рамками), так как внутри есть еще одна обертка для содержания всех элементов img и ширина этого контейнера равна ширине всех элементов плюс проавый отсутп , а не ширине родителя с рамками, из за этого мы не можем сделать зависимость в процентах.
