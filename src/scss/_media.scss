@@ -100,7 +100,8 @@
             height: 100%;
             width: 40%;
             background-color: rgba(40, 40, 40, 0.9);
-            transition: all 0.7s;   
+            transition: all 0.7s;
+            z-index: 1;   
         }
         &__nav_active {
             left: 0;

@@ -38,7 +38,8 @@
         border: none;
         background-color: $COLOR_BLACK;
     }
-    &__button-line {
+    &__btn-line {
+        display: block;
         width: 100%;
         height: 2px;
         background-color: $COLOR_WHITE_FONTS;

@@ -7,4 +7,5 @@ Files are connected:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fonts - local.        
 Methodology: BEM.  
 Type: responsive.   
+Accent: HTML, CSS, JS.    
 ___
