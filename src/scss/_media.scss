@@ -10,6 +10,9 @@
     .container {
         max-width: 960px;
     }
+    .social-connect {
+        display: none;
+    }
     .projects {
         &__content {
             grid-template-columns: repeat(2, 300px);
