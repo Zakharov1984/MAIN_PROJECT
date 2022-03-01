@@ -64,7 +64,7 @@ const products = [
 
 function getProductMarkup(product) {
     return  `
-            <div class="item" id="${product.id}">
+            <div class="item">
                 <div class="item__wrapper">
                     <img src="img/${product.image}" alt="${product.name}" class="item__img">
                     <div class="item__info">
@@ -81,7 +81,7 @@ function getProductMarkup(product) {
                         </div>
                     </div>
                 </div>
-                <button class="item__added" data-productId="${product.id}">добавить</button>
+                <button class="item__added" id="${product.id}">добавить</button>
             </div>\n
             `
 }

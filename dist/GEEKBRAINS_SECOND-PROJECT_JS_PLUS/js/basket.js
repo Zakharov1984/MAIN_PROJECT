@@ -2,12 +2,12 @@ let basketItems = [];
 let tableElement = document.querySelector('.table-items');
 let totalSumItemTable = document.querySelector('.table-items__total');
 let deleteBasketItemElements = [];
-let totalSumAlletems = 0;
+let totalSumAllitems = 0;
 let counterAllGoodsElement = document.querySelector('.basket__counter-goods');
 
 document.querySelector('.basket').addEventListener('click', event => {
     document.querySelector('.basket__box').classList.toggle('basket__box_active');
-})
+}) 
 
 /**
  * Отменяем всплытие события, чтобы оно не дошло до 'basket'.
@@ -17,43 +17,21 @@ document.querySelector('.basket__box').addEventListener('click', event => {
 })
 
 /**
- * В функции получаем все эелементы товаров,
- * ставим на них слушатель события клик(событие будет присходить на кнопке, перехватывать будем на карточке товара)
+ * В функции получаем все эелементы 'добавить' товаров,
+ * ставим на них слушатель события клик(событие будет присходить на кнопке).
  *  и обработчик события - который будет добавлять элемент в корзину. 
  */
 function addToCartButtons() {
-    const itemElements = document.querySelectorAll('.item');
+    const itemElements = document.querySelectorAll('.item__added');
     for (let item of itemElements) {
         item.addEventListener('click', event => {
-            addItemInBasket(products[event.currentTarget.id]);
+            event.stopPropagation(); // -
+            addItemInBasket(products[event.target.id]);
         })
     }
 }
 
 addToCartButtons();
-
-function deleteItemInBasket() {
-    deleteBasketItemElements.forEach( function (element) {
-        element.addEventListener('click', event => {
-            if (products[event.target.parentNode.id].counter > 1) {
-                products[event.target.parentNode.id].counter -= 1;
-                document.querySelector(`[id="${event.target.parentNode.id}"] .table-items__item-counter`).innerHTML = products[event.target.parentNode.id].counter;
-                sumFinalPriceItem(products[event.target.parentNode.id]);
-                counterAllGoods();
-                totalSumAlletemsFunction();
-            } else {
-/*                 products[event.target.parentNode.id].counter -= 1;
-                event.target.parentNode.remove(); */
-            }
-            console.log('11');
-        })
-        
-    })
-}
-
-
-
-
 
 
 /**
@@ -78,21 +56,20 @@ function addItemInBasket(itemObject) {
         itemObject.counter++;
         document.querySelector(`[id="${itemObject.id}"] .table-items__item-counter`).innerHTML = itemObject.counter;        
     }
-    deleteBasketItemElements = document.querySelectorAll('.table-items__item-delete');
-    sumFinalPriceItem(itemObject);
-    totalSumAlletemsFunction();
-    counterAllGoods();
-    deleteItemInBasket();
+        sumFinalPriceItem(itemObject);
+        totalSumAlletemsFunction();
+        counterAllGoods();
+        
 }
 
 /**
  * Функция добавляет строку с разметкой товара карзины в родительский эелемент.
  * @param {*} itemObject - на вход принимается объект из массива соответствующий узлу в верстке.
  */
- function MarkupItemInBasket(itemObject) {
+function MarkupItemInBasket(itemObject) {
     let MarkupItem =    `
                         <tr class="table-items__item" id="${itemObject.id}">
-                            <td class="table-items__item-delete">Удалить товар(1шт)</td>
+                            <td class="table-items__item-delete" data-deleteNumber="${itemObject.id}">Удалить товар(1шт)</td>
                             <td class="table-items__item-name">${itemObject.name}</td>
                             <td class="table-items__item-counter">${itemObject.counter}</td>
                             <td class="table-items__item-price">${itemObject.price}</td>
@@ -110,7 +87,7 @@ function addItemInBasket(itemObject) {
  */
 function sumFinalPriceItem(itemObject) {
     itemObject.sumTotal = itemObject.counter * itemObject.price;
-    document.querySelector(`[id="${itemObject.id}"] .table-items__item-total`).innerHTML = itemObject.sumTotal;
+    document.querySelector(`.table-items__item[id="${itemObject.id}"] .table-items__item-total`).innerHTML = itemObject.sumTotal;
 }
 
 /**
@@ -134,5 +111,7 @@ function counterAllGoods() {
     })
     counterAllGoodsElement.innerHTML = counterAllGoods;
 }
+
+
 
 
